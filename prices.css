@@ -1,0 +1,107 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background and font styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #0078d4, #005f9d);
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+#logo {
+    font-family: 'cursive';
+    font-size: 48px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Registration prices section styles */
+.registration-prices {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.registration-prices h2 {
+    font-size: 36px;
+    color: #0078d4;
+    margin: 20px 0;
+}
+
+.registration-prices ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.registration-prices li {
+    background: #f7f7f7;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.registration-prices li:hover {
+    transform: scale(1.05);
+}
+
+.registration-prices h3 {
+    font-size: 24px;
+    color: #0078d4;
+    margin: 10px 0;
+}
+
+.registration-prices p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+#logo:hover {
+    text-shadow: 2px 2px 8px rgba(0, 255, 30, 0.8); /* Change text shadow on hover */
+}

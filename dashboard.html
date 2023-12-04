@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowledgeNest - Home</title>
+    <link rel="stylesheet" type="text/css" href="dass.css">
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+            <h1>KnowledgeNest</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="cours1.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="prices.html">Prices</a></li>
+            </ul>
+        </nav>
+    
+        <div class="dashboard-section">
+            <h2>Welcome to KnowledgeNest</h2>
+            <p>Your journey to knowledge begins here. Explore, learn, and succeed with us!</p>
+        </div>
+    </header>
+    <main>
+        
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"I absolutely loved the Web Development course! The content was top-notch, and the instructor was fantastic. I've gained valuable skills that have helped me in my career."</p>
+                    <div class="testimonial-author">
+                        <img src="student.png" alt="Student 1">
+                        <h3>John Doe</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"The Digital Marketing course exceeded my expectations. The practical assignments and peer interaction made learning enjoyable and effective. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="student.png" alt="Student 2">
+                        <h3>Jane Smith</h3>
+                    </div>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </section>
+        <section class="statistics-section">
+            <h2>Platform Statistics</h2>
+            <div class="statistics">
+                <div class="stat">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Courses</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Instructors</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Include additional sections based on your content and design preferences -->
+    </main>
+    <footer>
+        <p>&copy; 2023 KnowledgeNest</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    searchButton.addEventListener("click", function () {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm !== "") {
+            // Redirect to a search results page with the search term
+            window.location.href = `search-results.html?q=${encodeURIComponent(searchTerm)}`;
+        }
+    });
+
+    // Listen for Enter key press to trigger the search
+    searchInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            searchButton.click();
+        }
+    });
+});
+    </script>
+</body>
+</html>

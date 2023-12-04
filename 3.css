@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Style the header */
+header {
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#logo h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the main section */
+main {
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-sidebar {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-main {
+    width: 75%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-main h2 {
+    color: #4CAF50; /* Green color */
+}
+
+/* Style specific dashboard components */
+.course-list,
+.agenda-list {
+    list-style: none;
+}
+
+.course-item,
+.agenda-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+.course-item:hover,
+.agenda-item:hover {
+    background-color: #ddd;
+}
+
+/* Style the search form */
+.dashboard-section form {
+    margin-top: 20px;
+}
+
+.dashboard-section input[type="text"] {
+    padding: 10px;
+    width: 70%;
+}
+
+.dashboard-section button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-section button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Style the footer */
+footer {
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,71 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background: url(about1.webp);
+    background-size: cover;
+}
+
+/* Style the header section */
+header {
+    background: rgba(255, 255, 255, 0);
+    color: #0088ff;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 36px;
+}
+
+/* Style the main content section */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Style the sections within the main content */
+section {
+    margin-bottom: 20px;
+}
+
+/* Style headings and text within the sections */
+h2 {
+    font-size: 24px;
+    color: #1706cf;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Style the footer */
+footer {
+    text-align:center;
+    padding: 0%;
+    background: #0419d5;
+    color: #fff;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* Add hover effect to links */
+a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}

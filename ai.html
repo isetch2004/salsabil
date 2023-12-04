@@ -1,0 +1,60 @@
+
+In the previous code examples where we created a simple webpage to ask questions and get responses, the JavaScript code was included directly in the HTML file. Here's a quick recap:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Q&A</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    
+    <label for="question">Type your question:</label>
+    <input type="text" id="question" placeholder="Ask a question...">
+    <button onclick="askQuestion()">Ask</button>
+
+    <div id="response-container"></div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value;
+            const responseContainer = document.getElementById('response-container');
+            responseContainer.innerHTML = ''; // Clear previous responses
+
+            try {
+                const response = await fetch('http://localhost:3000/api/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question }),
+                });
+
+                const data = await response.json();
+
+                if (data.type === 'text') {
+                    const paragraph = document.createElement('p');
+                    paragraph.textContent = data.content;
+                    responseContainer.appendChild(paragraph);
+                } else if (data.type === 'sound') {
+                    const audio = document.createElement('audio');
+                    audio.controls = true;
+                    audio.src = data.content;
+                    responseContainer.appendChild(audio);
+                } else if (data.type === 'video') {
+                    const video = document.createElement('video');
+                    video.controls = true;
+                    video.src = data.content;
+                    responseContainer.appendChild(video);
+                }
+            } catch (error) {
+                console.error('Error asking question:', error);
+            }
+        }
+    </script>
+</body>
+</html>
